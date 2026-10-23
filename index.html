@@ -4,6 +4,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #07111f;
+    --card: #101e30;
+    --cyan: #38e8ff;
+    --text: #f4f8ff;
+    --muted: #a8b6c9;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+  }
+
+  header, nav, main, section, footer {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  h1, h2, h3 {
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  h1 {
+    font-size: clamp(36px, 8vw, 64px);
+  }
+
+  h2 {
+    font-size: clamp(27px, 5vw, 40px);
+  }
+
+  p {
+    color: var(--muted);
+  }
+
+  a {
+    transition: 0.2s ease;
+  }
+
+  a[href^="mailto:"],
+  a[href*="wa.me"] {
+    display: inline-block;
+    margin: 6px 5px 6px 0;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: var(--cyan);
+    color: #06111c;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  a[href^="mailto:"]:hover,
+  a[href*="wa.me"]:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+  }
+
+  section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  footer {
+    border-top: 1px solid #24364b;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: 600px) {
+    header, nav, main, section, footer {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+</style>
+
   <title>Nexora Digital | Websites That Grow Your Business</title>
   <meta name="description" content="Nexora Digital creates modern websites for businesses, creators and startups.">
   <style>
